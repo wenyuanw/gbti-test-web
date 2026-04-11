@@ -1,0 +1,13 @@
+{
+  "name": "gbti-test-web",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "wrangler dev --config workers/gbti-worker/wrangler.toml --port 8788",
+    "deploy": "wrangler deploy --config workers/gbti-worker/wrangler.toml"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}
