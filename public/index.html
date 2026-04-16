@@ -965,6 +965,46 @@
       flex-wrap: wrap;
     }
 
+    .sponsor-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: linear-gradient(90deg, #f0f4ef, #e6ede5);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      text-decoration: none;
+      transition: background .16s ease;
+      cursor: pointer;
+    }
+
+    .sponsor-bar strong {
+      color: var(--accent);
+    }
+
+    .sponsor-bar:hover {
+      background: linear-gradient(90deg, #e6ede5, #dce5da);
+    }
+
+    .sponsor-bar:hover strong {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .sponsor-bar .sponsor-tag {
+      font-size: 11px;
+      background: var(--accent);
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
     .site-footer {
       margin-top: auto;
       padding: 16px 0 10px;
@@ -1090,6 +1130,10 @@
 </head>
 <body>
   <div class="shell">
+    <a class="sponsor-bar" href="https://findfin.app" target="_blank" rel="noopener noreferrer">
+      <span class="sponsor-tag">赞助</span>
+      <strong>FindFin</strong> — 一站式发现优质投资资源与内置实用工具
+    </a>
     <section id="intro" class="screen active">
       <div class="hero hero-home card">
         <div class="hero-home-main">
@@ -1318,6 +1362,8 @@
         <a href="https://github.com/wenyuanw/gbti-test-web" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
         <span class="footer-sep">·</span>
         <a href="mailto:hi@wenyuanw.me">联系我们</a>
+        <span class="footer-sep">·</span>
+        <a href="https://findfin.app" target="_blank" rel="noopener noreferrer">FindFin 投资工具</a>
       </div>
     </footer>
   </div>
